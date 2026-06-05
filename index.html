@@ -752,6 +752,7 @@ Dua kalimat untuk ditambahkan ke setiap prompt:
 </div>
 
 <script>
+try{localStorage.removeItem('unlk');}catch(e){}
 const HASH='666d9cf9ee9524bda3d2ee8193db88082a6d31f1fe342cb2d72bd5495d3ab2db';
 async function sha256(s){const b=new TextEncoder().encode(s);const d=await crypto.subtle.digest('SHA-256',b);return Array.from(new Uint8Array(d)).map(x=>x.toString(16).padStart(2,'0')).join('')}
 async function unlock(){
@@ -760,13 +761,13 @@ async function unlock(){
  if(h===HASH){
  document.getElementById('lock').style.display='none';
  document.getElementById('main').style.display='grid';
- sessionStorage.setItem('unlk','1');localStorage.setItem('unlk','1');
+ sessionStorage.setItem('unlk','1');
  }else{
  const e=document.getElementById('err');e.textContent='Incorrect password. Please try again.';
  setTimeout(()=>e.textContent='',3000);document.getElementById('pw').value='';
  }
 }
-if(sessionStorage.getItem('unlk')==='1'||localStorage.getItem('unlk')==='1'){
+if(sessionStorage.getItem('unlk')==='1'){
  document.getElementById('lock').style.display='none';
  document.getElementById('main').style.display='grid';
 }
