@@ -155,8 +155,10 @@ td a{color:var(--ink);font-weight:600}td a:hover{color:var(--accent2)}
  <a href="#ex6">6 · Teams Recap → Word Minutes</a>
  <a href="#ex7">7 · Excel Power Hour</a>
  <a href="#ex8">8 · Analyst Agent (multi-perspective)</a>
+ <a href="#ex9">9 · Personalised Mail Merge (Cowork)</a>
+ <a href="#ex10">10 · CV Screening from SharePoint</a>
  <h3>Extras</h3>
- <a href="#extras">＋ Extras (CV screen · Outlook · Mail merge · Power move)</a>
+ <a href="#extras">＋ Extras (Outlook · Word interrogate · Power move)</a>
  <h3>Resources</h3>
  <a href="#tips">Prompt tips</a>
  </nav>
@@ -172,10 +174,10 @@ td a{color:var(--ink);font-weight:600}td a:hover{color:var(--accent2)}
  <tr><th>#</th><th>File</th><th>Type</th><th>Used in</th><th>What it contains</th></tr>
  <tr><td>01</td><td><a href="samples/01 Contoso_Market_Brief.xlsx">01 Contoso_Market_Brief.xlsx</a></td><td><span class="badge blue">Excel</span></td><td>Ex 3, Extra F</td><td>Peer benchmark, market sizing 2024-28, SWOT</td></tr>
  <tr><td>02</td><td><a href="samples/02 Contoso_KPI_Dashboard.xlsx">02 Contoso_KPI_Dashboard.xlsx</a></td><td><span class="badge blue">Excel</span></td><td>Ex 2, Ex 4, Ex 7, Ex 8</td><td>12 months of KPIs across Plaza Indonesia, Pondok Indah Mall, Pakuwon Surabaya and more, targets vs actual, open issues</td></tr>
- <tr><td>03</td><td><a href="samples/03 Contoso_Mail_Merge_Recipients.xlsx">03 Contoso_Mail_Merge_Recipients.xlsx</a></td><td><span class="badge blue">Excel</span></td><td>Extra D</td><td>14 Store Managers for Cowork-driven personalised letters (name, location, role, email, performance band, key highlight)</td></tr>
- <tr><td>04</td><td><a href="samples/04 Contoso_Brand_Guidelines.docx">04 Contoso_Brand_Guidelines.docx</a></td><td><span class="badge yellow">Word</span></td><td>Extra B, Extra D</td><td>Brand tone, GM communications template, press release structure</td></tr>
- <tr><td>05</td><td><a href="samples/05 Contoso_Strategic_Memo.docx">05 Contoso_Strategic_Memo.docx</a></td><td><span class="badge yellow">Word</span></td><td>Ex 4, Extra C, Extra F</td><td>Strategic memo used to ground the PowerPoint draft + Word doc Q&amp;A demo</td></tr>
- <tr><td>06</td><td><a href="samples/CVs/">samples/CVs/ (12 files)</a></td><td><span class="badge yellow">Word ×12</span></td><td>Extra E</td><td>12 candidate CVs for the Area Retail Manager (5+ stores) role — upload as a SharePoint folder</td></tr>
+ <tr><td>03</td><td><a href="samples/03 Contoso_Mail_Merge_Recipients.xlsx">03 Contoso_Mail_Merge_Recipients.xlsx</a></td><td><span class="badge blue">Excel</span></td><td>Ex 9</td><td>14 Store Managers for Cowork-driven personalised letters (name, location, role, email, performance band, key highlight)</td></tr>
+ <tr><td>04</td><td><a href="samples/04 Contoso_Brand_Guidelines.docx">04 Contoso_Brand_Guidelines.docx</a></td><td><span class="badge yellow">Word</span></td><td>Ex 9, Extra B</td><td>Brand tone, GM communications template, press release structure</td></tr>
+ <tr><td>05</td><td><a href="samples/05 Contoso_Strategic_Memo.docx">05 Contoso_Strategic_Memo.docx</a></td><td><span class="badge yellow">Word</span></td><td>Ex 4, Extra C, Extra D</td><td>Strategic memo used to ground the PowerPoint draft + Word doc Q&amp;A demo</td></tr>
+ <tr><td>06</td><td><a href="samples/CVs/">samples/CVs/ (12 files)</a></td><td><span class="badge yellow">Word ×12</span></td><td>Ex 10</td><td>12 candidate CVs for the Area Retail Manager (5+ stores) role — upload as a SharePoint folder</td></tr>
  <tr><td>07</td><td><a href="samples/06 Contoso_Merger_Discussion_Transcript.docx">06 Contoso_Merger_Discussion_Transcript.docx</a></td><td><span class="badge yellow">Word</span></td><td>Ex 6</td><td>Sample Potential Merger meeting transcript — used by Teams Recap and Word minutes</td></tr>
 </table>
 <div class="callout warn" style="margin-top:14px"><b>Why OneDrive / SharePoint?</b> M365 Copilot can only analyse files stored in OneDrive or SharePoint. Files on your local Desktop are invisible to Copilot.</div>
@@ -532,6 +534,71 @@ Keep it dense, modern, sans-serif, with thin outline icons only — no clip-art,
  <div class="callout good"><b>How to share:</b> click <b>Download</b> (PNG or PDF) → drop into Outlook, Teams, or PowerPoint. No HTML, no code, no design tool.</div>
 </div>
 
+<h3 style="margin:24px 0 6px;font-size:16px;font-weight:700">More poster ideas for Contoso Retail</h3>
+<p class="lead">Three alternate angles, same plain-language style. Pick whichever resonates with the room — or run two side-by-side and let the GM choose.</p>
+
+<div class="activity">
+ <div class="head"><span class="num">Alt 5.1</span><span class="file">🎨 Copilot Create · image output</span></div>
+ <h4>Alternate 1 · Customer Journey Poster</h4>
+ <div class="prompt">Make a one-page infographic poster called &quot;Our Customer Journey — From Mall Visit to Loyal Member&quot;. Use our brand colours purple and lavender on white, modern magazine style. Vertical A4, fill the entire page top to bottom.
+
+At the top, a big bold title: &quot;FROM VISIT TO LOYAL MEMBER&quot;
+Underneath: &quot;How a Contoso shopper becomes a repeat customer · FY26&quot;
+
+Then a horizontal journey strip with 5 stages, each with a simple icon, a stage name, and one number. The stages are: 1) Awareness — &quot;42M&quot; monthly digital impressions; 2) Mall Visit — &quot;6.8M&quot; monthly footfall across 300 stores; 3) Purchase — &quot;27%&quot; conversion rate; 4) Loyalty Sign-Up — &quot;Rp 2.1M&quot; first-order basket; 5) Repeat Member — &quot;3.4x&quot; visits per year.
+
+Then a section called &quot;WHERE WE LOSE PEOPLE&quot; with 3 cards side by side, each with a drop-off percentage and a one-line fix. Card 1: &quot;55%&quot; walk-out without buying — fix: better in-store associate prompts and clearer pricing. Card 2: &quot;73%&quot; of first-time buyers never come back — fix: loyalty sign-up at checkout, welcome offer in 48 hours. Card 3: &quot;38%&quot; of members go silent after 6 months — fix: personalised app push and tier upgrade.
+
+Then a small table called &quot;Lifetime Value by Tier&quot; with 4 rows (Bronze, Silver, Gold, Platinum) and 3 columns (Members, Avg Annual Spend, Visits per Year).
+
+At the bottom, a coloured ribbon footer saying &quot;PRIORITY: lift loyalty sign-up to 35% at checkout by Q4&quot; with today&#39;s date on the right.
+
+Style: clean modern sans-serif, thin outline icons, plenty of white space. No stock photos. Fill the full A4 page.<button class="copy" onclick="cp(this)">Copy</button></div>
+</div>
+
+<div class="activity">
+ <div class="head"><span class="num">Alt 5.2</span><span class="file">🎨 Copilot Create · image output</span></div>
+ <h4>Alternate 2 · Store Performance Heatmap</h4>
+ <div class="prompt">Make a one-page infographic poster called &quot;Store Performance Heatmap — 300 Stores at a Glance&quot;. Use our brand colours purple and lavender, with red-amber-green for performance. Vertical A4, fill the entire page.
+
+At the top, a big bold title: &quot;300 STORES · ONE VIEW&quot;
+Underneath: &quot;Where to invest, where to fix, where to exit · Q3 FY26 · For the Operating Committee&quot;
+
+Then a row of 4 big-number boxes: &quot;73%&quot; stores at or above plan; &quot;18%&quot; stores in the watch zone; &quot;9%&quot; stores under formal review; &quot;Rp 14.2B&quot; profit at risk from the bottom decile.
+
+Then a section called &quot;THE FOUR ZONES&quot; with 4 cards side by side. Card 1 — &quot;Star Stores (top 20%)&quot;: protect, expand assortment, replicate the model. Card 2 — &quot;Steady (next 50%)&quot;: light touch, quarterly review, share best practice. Card 3 — &quot;Watch (next 20%)&quot;: 90-day turnaround plan, assortment reset, associate refresh. Card 4 — &quot;Exit Review (bottom 10%)&quot;: lease re-negotiation or planned closure within 12 months.
+
+Then a small table called &quot;Regional Snapshot&quot; with 5 rows (Jakarta, West Java, Central &amp; East Java, Bali &amp; Eastern Indonesia, Sumatra) and 3 columns (Stores, Same-Store Sales YoY, Action).
+
+Then a row of 3 simple icons with labels for &quot;What good looks like&quot;: friendly associate, clean visual merchandising, fast checkout.
+
+At the bottom, a coloured ribbon footer saying &quot;NEXT STEP: agree the 30 stores entering the 90-day turnaround in the next OpsCom&quot; with today&#39;s date on the right.
+
+Style: clean modern sans-serif, thin outline icons, lots of white space. Fill the entire A4 page.<button class="copy" onclick="cp(this)">Copy</button></div>
+</div>
+
+<div class="activity">
+ <div class="head"><span class="num">Alt 5.3</span><span class="file">🎨 Copilot Create · image output</span></div>
+ <h4>Alternate 3 · Year-in-Review Town Hall Poster</h4>
+ <div class="prompt">Make a celebratory one-page infographic poster called &quot;FY26 Year in Review — Thank You, Contoso Team&quot;. Use our brand colours purple and lavender with a warm gold accent for the &quot;wins&quot; section. Vertical A4, fill the whole page.
+
+At the top, a big bold title: &quot;FY26 · YEAR IN REVIEW&quot;
+Underneath: &quot;A thank-you to the 12,000 Contoso colleagues who made it happen&quot;
+
+Then a row of 4 big-number boxes: &quot;Rp 18.4 trillion&quot; revenue; &quot;+9.2%&quot; same-store sales growth; &quot;14&quot; new stores opened; &quot;4.6 / 5&quot; customer satisfaction.
+
+Then a section called &quot;THREE MOMENTS WE&#39;RE PROUD OF&quot; with 3 cards side by side. Card 1 — &quot;Lebaran Together&quot;: highest single-month basket in our history. Card 2 — &quot;Loyalty Reloaded&quot;: 1.2M new members joined our app. Card 3 — &quot;Stores Reborn&quot;: 28 store refurbishments completed without a single safety incident.
+
+Then a small list called &quot;What our customers said about us&quot; with 3 short anonymised quotes (one line each), each in italics with quote marks.
+
+Then a row of 3 simple icons with labels for &quot;What&#39;s next in FY27&quot;: omnichannel everywhere, premium-up assortment, 20 new stores in tier-2 cities.
+
+At the bottom, a warm gold ribbon footer saying &quot;THANK YOU TO EVERY CONTOSO COLLEAGUE — HERE&#39;S TO FY27&quot; with the company name on the left and today&#39;s date on the right.
+
+Style: warm but professional, modern sans-serif, thin outline icons (shopping bag, smiley, store, app, heart). No stock photos of people. Fill the entire A4 page.<button class="copy" onclick="cp(this)">Copy</button></div>
+</div>
+
+
 <div class="activity bonus">
  <div class="head"><span class="num">Bonus</span><span class="file">🖼️ Copilot Create · refine</span></div>
  <h4>Refine without starting over</h4>
@@ -696,6 +763,78 @@ Show me the plan first. I will approve. Then execute.<button class="copy" onclic
 </section>
 
 
+<section id="ex9">
+<div class="modulehead"><div class="num">9</div><h2>Exercise 9 · Personalised Mail Merge (Cowork)<small>Microsoft 365 Copilot · Cowork · Outlook drafts</small></h2></div>
+<div class="callout good"><b>The play:</b> forget Word&#39;s <i>Mailings</i> ribbon. Let <b>Cowork</b> do the merge — drafting each quarterly store-by-store performance letter from the GM <b>uniquely tuned</b> to that recipient, and queueing them as Outlook drafts for the GM to review and send.</div>
+
+<div class="card">
+<h3>9.1 · One prompt → 14 individually-tuned letters → 14 Outlook drafts</h3>
+<p class="lead">Open <b>Microsoft 365 Copilot Chat → Cowork</b>. Reference the recipient list and brand guidelines with <code>/</code>. Paste:</p>
+<div class="activity">
+ <div class="head"><span class="num">Task 9.1</span><span class="file">👥 Cowork · multi-step</span></div>
+ <h4>Personalised cascade — 14 unique letters in one prompt</h4>
+ <div class="prompt">Cowork — run personalised quarterly outreach to 14 store managers for General Manager · Retail Operations at Contoso Lifestyle Retail.
+
+Sources:
+- Recipient list: /03 Contoso_Mail_Merge_Recipients.xlsx (14 rows: First Name, Full Name, Location, Role, Email, Performance Band, Key Highlight)
+- Brand &amp; tone: /04 Contoso_Brand_Guidelines.docx (use the &quot;Approved GM Communications Template&quot; exactly)
+
+For each row in the recipient list:
+1. Write a personal 180-word letter using the approved template — a quarterly store-by-store performance letter from the GM. Tailor the body to the recipient&#39;s Performance Band:
+ - &quot;Top Quartile&quot; → appreciative, ask them to mentor a neighbouring site.
+ - &quot;On Track&quot; → acknowledge progress + push one specific stretch goal relevant to General Manager · Retail Operations.
+ - &quot;Watch&quot; → direct, supportive, name one specific 30-day improvement.
+2. Quote the recipient&#39;s Key Highlight verbatim in the second paragraph.
+3. Sign off as Pak Andi Wijaya, General Manager · Retail Operations, Contoso Lifestyle Retail.
+4. Create an Outlook DRAFT (do not send) to the address in the recipient&#39;s Email column. Subject: &quot;[First Name], a quick note on this quarter at [Location]&quot;.
+
+When all 14 drafts are ready, give me a summary table: Recipient · Location · Band · Subject preview · Draft link. Stop and confirm before sending anything.<button class="copy" onclick="cp(this)">Copy</button></div>
+ <div class="callout"><b>Why Cowork beats classic Mail Merge:</b> classic merge inserts the same body with field substitutions. Cowork writes <i>a different body for each recipient</i> — and stops at &quot;Drafts&quot; so the GM signs off before anything is sent.</div>
+</div>
+</div>
+</section>
+
+
+<section id="ex10">
+<div class="modulehead"><div class="num">10</div><h2>Exercise 10 · CV Screening from a SharePoint Folder<small>Microsoft 365 Copilot · Cowork · SharePoint grounding</small></h2></div>
+<div class="callout good"><b>The scenario:</b> the HR team is capped at attaching only a handful of CVs into most chatbots. Point Cowork at a <b>SharePoint folder</b> and there is no file cap — scale from 12 to 1,200 CVs with the same prompt, fully grounded.</div>
+
+<div class="card">
+<h3>10.1 · Prep — drop the CVs into SharePoint</h3>
+<div class="activity">
+ <div class="head"><span class="num">Task 10.1</span><span class="file">📁 SharePoint setup</span></div>
+ <h4>Upload the sample CVs to a SharePoint library</h4>
+ <ol>
+ <li>Open <code>samples/CVs/</code> (12 CV_*.docx files).</li>
+ <li>Upload them to a SharePoint document library — e.g. <i>HR / Recruitment / Contoso Lifestyle Retail Area Retail Manager (5+ stores) – Apr 2026</i>.</li>
+ <li>Wait ~2 minutes for Microsoft Graph to index them.</li>
+ </ol>
+</div>
+</div>
+
+<div class="card">
+<h3>10.2 · Cowork — shortlist + interview pack + offer-letter draft for #1</h3>
+<div class="activity">
+ <div class="head"><span class="num">Task 10.2</span><span class="file">👥 Cowork · folder grounding</span></div>
+ <h4>One prompt → ranked shortlist → personalised interview briefs → drafted candidate email</h4>
+ <div class="prompt">Cowork — handle CV screening for the Area Retail Manager (5+ stores) role at Contoso Lifestyle Retail.
+
+Source: SharePoint folder /HR/Recruitment/Contoso Lifestyle Retail Area Retail Manager (5+ stores) (12 CVs).
+
+Do all of the following:
+1. Review every CV in the folder. Score each candidate 1–5 against: multi-store P&L, visual merchandising, shrinkage control.
+2. Build a ranked shortlist (top 5) with: name · current company · 3 quoted evidence bullets · risks/gaps to test in interview.
+3. Build a &quot;second look&quot; list (next 3) and a rejected list (one line of reasoning each).
+4. For each top-5 candidate, draft a personalised interview-prep brief for the hiring manager — 3 questions to ask, and what kind of answer opens a &quot;yes&quot;.
+5. Draft (DO NOT send) an introductory email to candidate #1 inviting them to a screening call. Save as an Outlook draft.
+
+Flag anything unclear with [VERIFY]. Do not fabricate qualifications. Stop and confirm before sending any email.<button class="copy" onclick="cp(this)">Copy</button></div>
+ <div class="callout good"><b>The win:</b> Cowork grounds on an entire SharePoint folder — the same prompt scales from 12 to 1,200 CVs, with full traceability back to each source CV.</div>
+</div>
+</div>
+</section>
+
+
 <section id="extras">
 <div class="modulehead"><div class="num">＋</div><h2>Extras<small>Use these when there is extra time, or to tailor the session to a specific GM concern</small></h2></div>
 <div class="callout"><b>Why these are extras:</b> they were in the original 8-exercise flow but the GM asked for a tighter agenda. Each one stands on its own — paste &amp; demo any of them on request.</div>
@@ -731,68 +870,10 @@ Show me the plan first. I will approve. Then execute.<button class="copy" onclic
 </div>
 
 <div class="card">
-<h3>Extra D · Cowork — personalised GM cascade (better than Mail Merge)</h3>
-<p class="lead">Forget Word&#39;s <i>Mailings</i> ribbon — let Cowork do the merge, draft each quarterly store-by-store performance letter from the GM <b>uniquely tuned</b> to that recipient, and queue them as Outlook drafts for the GM to review and send.</p>
-<div class="activity">
- <div class="head"><span class="num">Extra D</span><span class="file">👥 Cowork · multi-step</span></div>
- <h4>One prompt → 14 individually-tuned letters → 14 Outlook drafts</h4>
- <div class="prompt">Cowork — run personalised quarterly outreach to 14 store managers for General Manager · Retail Operations at Contoso Lifestyle Retail.
-
-Sources:
-- Recipient list: /03 Contoso_Mail_Merge_Recipients.xlsx (14 rows: First Name, Full Name, Location, Role, Email, Performance Band, Key Highlight)
-- Brand &amp; tone: /04 Contoso_Brand_Guidelines.docx (use the &quot;Approved GM Communications Template&quot; exactly)
-
-For each row in the recipient list:
-1. Write a personal 180-word letter using the approved template — a quarterly store-by-store performance letter from the GM. Tailor the body to the recipient&#39;s Performance Band:
- - &quot;Top Quartile&quot; → appreciative, ask them to mentor a neighbouring site.
- - &quot;On Track&quot; → acknowledge progress + push one specific stretch goal relevant to General Manager · Retail Operations.
- - &quot;Watch&quot; → direct, supportive, name one specific 30-day improvement.
-2. Quote the recipient&#39;s Key Highlight verbatim in the second paragraph.
-3. Sign off as Pak Andi Wijaya, General Manager · Retail Operations, Contoso Lifestyle Retail.
-4. Create an Outlook DRAFT (do not send) to the address in the recipient&#39;s Email column. Subject: &quot;[First Name], a quick note on this quarter at [Location]&quot;.
-
-When all 14 drafts are ready, give me a summary table: Recipient · Location · Band · Subject preview · Draft link. Stop and confirm before sending anything.<button class="copy" onclick="cp(this)">Copy</button></div>
- <div class="callout"><b>Why Cowork beats classic Mail Merge:</b> classic merge inserts the same body with field substitutions. Cowork writes <i>a different body for each recipient</i> — and stops at &quot;Drafts&quot; so the GM signs off before anything is sent.</div>
-</div>
-</div>
-
-<div class="card">
-<h3>Extra E · CV screening from a SharePoint folder</h3>
-<p class="lead">The HR team is capped at attaching only a handful of CVs into most chatbots. Point Cowork at the <b>SharePoint folder</b> — no file cap, fully grounded.</p>
-<div class="activity">
- <div class="head"><span class="num">Extra E1</span><span class="file">📁 SharePoint setup</span></div>
- <h4>Prep — drop the CVs in SharePoint</h4>
- <ol>
- <li>Open <code>samples/CVs/</code> (12 CV_*.docx files).</li>
- <li>Upload them to a SharePoint document library — e.g. <i>HR / Recruitment / Contoso Lifestyle Retail Area Retail Manager (5+ stores) – Apr 2026</i>.</li>
- <li>Wait ~2 minutes for Microsoft Graph to index them.</li>
- </ol>
-</div>
-
-<div class="activity">
- <div class="head"><span class="num">Extra E2</span><span class="file">👥 Cowork · folder grounding</span></div>
- <h4>Cowork: shortlist + interview pack + offer-letter draft for #1</h4>
- <div class="prompt">Cowork — handle CV screening for the Area Retail Manager (5+ stores) role at Contoso Lifestyle Retail.
-
-Source: SharePoint folder /HR/Recruitment/Contoso Lifestyle Retail Area Retail Manager (5+ stores) (12 CVs).
-
-Do all of the following:
-1. Review every CV in the folder. Score each candidate 1–5 against: multi-store P&L, visual merchandising, shrinkage control.
-2. Build a ranked shortlist (top 5) with: name · current company · 3 quoted evidence bullets · risks/gaps to test in interview.
-3. Build a &quot;second look&quot; list (next 3) and a rejected list (one line of reasoning each).
-4. For each top-5 candidate, draft a personalised interview-prep brief for the hiring manager — 3 questions to ask, and what kind of answer opens a &quot;yes&quot;.
-5. Draft (DO NOT send) an introductory email to candidate #1 inviting them to a screening call. Save as an Outlook draft.
-
-Flag anything unclear with [VERIFY]. Do not fabricate qualifications. Stop and confirm before sending any email.<button class="copy" onclick="cp(this)">Copy</button></div>
- <div class="callout good"><b>The win:</b> Cowork grounds on an entire SharePoint folder, scaling from 12 to 1,200 CVs with the same prompt.</div>
-</div>
-</div>
-
-<div class="card">
-<h3>Extra F · New-Store Go / No-Go Decision Pack — the industry power move</h3>
+<h3>Extra D · New-Store Go / No-Go Decision Pack — the industry power move</h3>
 <div class="callout"><b>Scenario:</b> A mall developer just offered Contoso Retail a 450 sqm anchor unit at a new lifestyle mall in Surabaya. The Operating Committee meets in 4 days.</div>
 <div class="activity">
- <div class="head"><span class="num">Extra F</span><span class="file">🚀 Copilot Chat + Researcher</span></div>
+ <div class="head"><span class="num">Extra D</span><span class="file">🚀 Copilot Chat + Researcher</span></div>
  <h4>One prompt, one decision pack, fully grounded</h4>
  <p>Open Microsoft 365 Copilot Chat (or Researcher for the deeper option). Reference the relevant sample files with <code>/</code>. Paste:</p>
  <div class="prompt">Act as a retail strategy analyst for General Manager · Retail Operations at Contoso Lifestyle Retail.
