@@ -121,7 +121,22 @@ td a{color:var(--ink);font-weight:600}td a:hover{color:var(--accent2)}
  body{font-size:13.5px}
  .modulehead h2{font-size:16px}
 }
-</style><style id="ihh-override">
+</style>
+<style id="bcard-css">
+.bonus-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:14px}
+.bcard{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px 18px;cursor:pointer;transition:all .18s;box-shadow:0 1px 3px rgba(0,0,0,.04);text-align:left;font-family:inherit;color:#111827;width:100%}
+.bcard:hover{transform:translateY(-2px);border-color:#0f766e;box-shadow:0 6px 18px rgba(15,118,110,.15)}
+.bcard .ico{font-size:22px;margin-bottom:6px;display:block}
+.bcard h4{margin:0 0 4px;font-size:15px;color:#111827}
+.bcard p{margin:0;font-size:12.5px;color:#4b5563;line-height:1.4}
+.modal-overlay{position:fixed;inset:0;background:rgba(8,12,28,.78);z-index:8000;display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:40px 20px}
+.modal-overlay.open{display:flex}
+.modal{background:#fff;border-radius:14px;max-width:1100px;width:100%;padding:28px 32px;margin:auto;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.modal-close{position:absolute;top:12px;right:16px;font-size:28px;background:transparent;border:none;cursor:pointer;color:#6b7280;line-height:1}
+.modal-close:hover{color:#111827}
+.modal h3{margin:0 0 12px;font-size:22px;color:#0f172a}
+</style>
+<style id="ihh-override">
 /* ========== IHH-STYLE OVERRIDES ========== */
 .layout { grid-template-columns: 1fr !important; }
 aside { display:none !important; }
@@ -848,13 +863,10 @@ If any answer is wrong or missing a citation, edit the instructions and try agai
 </section><div class="lab-nav-ihh"><button class="secondary" data-go="ex5">← Create a Visual Infographic</button><button data-go="extras">Next: Extras →</button></div></div><div class="view-ihh" id="view-extras"><section id="extras">
 <div class="modulehead"><div class="num">B</div><h2>Bonus - Extra Exercises &amp; Prompt Tips<small>Everything else from the ten-move playbook, plus GM prompt tips</small></h2></div>
 <div class="callout good"><b>Use these when there is extra time</b>, or to tailor the session to a specific GM concern (mail merge, CV screening, Teams recaps, Excel Power Hour, analyst agent). The prompt tips card at the bottom applies to every Copilot surface.</div>
-<div class="card">
-<h3>Bonus - Exercise 6 · Teams Meeting Recap → Word Meeting Minutes Teams Copilot · Word Copilot</h3>
+<div class="bonus-grid"><button class="bcard" onclick="openModal('ex-87d1928f')"><span class="ico">💡</span><h4>Exercise 6 · Teams Meeting Recap → Word Meeting Minutes Teams Copilot · Word Copilot</h4><p>Exercise 6 · Teams Meeting Recap → Word Meeting Minutes Teams Copilot · Word Copilot The scenario: the GM just stepped out of a 60...</p></button><button class="bcard" onclick="openModal('ex-956ab96f')"><span class="ico">🧩</span><h4>6.1 · Teams — audio recap of the Potential Merger meeting</h4><p>Open Teams → Calendar → click any past meeting that was recorded or transcribed. (For this demo, use the sample 06 Contoso_Merger_...</p></button><button class="bcard" onclick="openModal('ex-4087c42c')"><span class="ico">📊</span><h4>6.2 · Word — create a reusable meeting-minutes template</h4><p>Open a blank Word document. Click the Copilot icon → Draft with Copilot . Paste: Task 6.2 📝 Word Copilot · template draft Create a...</p></button><button class="bcard" onclick="openModal('ex-284e9276')"><span class="ico">📧</span><h4>6.3 · Word — fill the template with the Potential Merger meeting</h4><p>Stay in the same Word document. In the Copilot pane, reference the merger transcript with / and paste: Task 6.3 📝 Word Copilot · f...</p></button></div></section><div class="lab-nav-ihh"><button class="secondary" data-go="ex6">← Exercise 6 - Build…</button><button data-go="intro">Back to start ↺</button></div></div></div><div class="modal-overlay" id="modal-ex-87d1928f"><div class="modal"><button class="modal-close" onclick="closeModal('ex-87d1928f')">×</button><h3>Exercise 6 · Teams Meeting Recap → Word Meeting Minutes Teams Copilot · Word Copilot</h3>
 <section id="ex6">
 <h2>Exercise 6 · Teams Meeting Recap → Word Meeting Minutes<small>Teams Copilot · Word Copilot</small></h2></section></div>
-<div class="callout good"><b>The scenario:</b> the GM just stepped out of a 60-minute "Potential Merger" discussion. They need a clean recap, a structured meeting-minutes template the company can reuse, and the minutes filled in — all in 5 minutes.</div>
-<div class="card">
-<h3>6.1 · Teams — audio recap of the Potential Merger meeting</h3>
+<div class="callout good"><b>The scenario:</b> the GM just stepped out of a 60-minute "Potential Merger" discussion. They need a clean recap, a structured meeting-minutes template the company can reuse, and the minutes filled in — all in 5 minutes.</div></div><div class="modal-overlay" id="modal-ex-956ab96f"><div class="modal"><button class="modal-close" onclick="closeModal('ex-956ab96f')">×</button><h3>6.1 · Teams — audio recap of the Potential Merger meeting</h3>
 <p class="lead">Open <b>Teams → Calendar</b> → click any past meeting that was recorded or transcribed. (For this demo, use the sample <code>06 Contoso_Merger_Discussion_Transcript.docx</code> in OneDrive if you don't have a real Teams recording handy.) Click the <b>Recap</b> tab. In the Copilot box at the top of the recap, paste:</p>
 <div class="activity">
 <div class="head"><span class="num">Task 6.1</span><span class="file">💬 Teams Copilot · Intelligent Recap</span></div>
@@ -873,9 +885,7 @@ Produce:
 Tone: factual, neutral, no speculation.<button class="copy" onclick="cp(this)">Copy</button></div>
 <div class="callout"><b>Why GMs love this:</b> the recap is grounded on the actual transcript — you get the decisions, the politics, the asks of you, and the unresolved questions in under 60 seconds.</div>
 </div>
-</div>
-<div class="card">
-<h3>6.2 · Word — create a reusable meeting-minutes template</h3>
+</div></div><div class="modal-overlay" id="modal-ex-4087c42c"><div class="modal"><button class="modal-close" onclick="closeModal('ex-4087c42c')">×</button><h3>6.2 · Word — create a reusable meeting-minutes template</h3>
 <p class="lead">Open a blank Word document. Click the <b>Copilot</b> icon → <b>Draft with Copilot</b>. Paste:</p>
 <div class="activity">
 <div class="head"><span class="num">Task 6.2</span><span class="file">📝 Word Copilot · template draft</span></div>
@@ -897,9 +907,7 @@ Include the following sections, each with placeholder text in square brackets so
 Use the Contoso Lifestyle Retail brand tone: direct, professional, no jargon. Add a 1-line footer: "Confidential — internal use only." Format it so it looks like a proper corporate template, not a chat reply.<button class="copy" onclick="cp(this)">Copy</button></div>
 <div class="callout"><b>Save it as a template:</b> after Copilot drafts the template, save the file as <code>Contoso_Meeting_Minutes_Template.docx</code> in your OneDrive — the whole team can reuse it.</div>
 </div>
-</div>
-<div class="card">
-<h3>6.3 · Word — fill the template with the Potential Merger meeting</h3>
+</div></div><div class="modal-overlay" id="modal-ex-284e9276"><div class="modal"><button class="modal-close" onclick="closeModal('ex-284e9276')">×</button><h3>6.3 · Word — fill the template with the Potential Merger meeting</h3>
 <p class="lead">Stay in the same Word document. In the Copilot pane, reference the merger transcript with <code>/</code> and paste:</p>
 <div class="activity">
 <div class="head"><span class="num">Task 6.3</span><span class="file">📝 Word Copilot · fill the template</span></div>
@@ -914,8 +922,7 @@ Rules:
 - Flag any sensitive merger-related items as "CONFIDENTIAL — restricted distribution" in red at the section header.<button class="copy" onclick="cp(this)">Copy</button></div>
 <div class="callout good"><b>The win:</b> what used to take a minute-taker 90 minutes after a strategic meeting now takes Copilot 30 seconds — and the minutes are grounded on the actual transcript, not the minute-taker's memory.</div>
 </div>
-</div>
-</section><div class="lab-nav-ihh"><button class="secondary" data-go="ex6">← Exercise 6 - Build…</button><button data-go="intro">Back to start ↺</button></div></div></div><!--IHH-INJECT-END-->
+</div></div><!--IHH-INJECT-END-->
 </main></div><div class="card">
 <h3>Bonus - Exercise 7 · Excel Power Hour Copilot in Excel · Chat · Edit · Plan</h3>
 <section id="ex7">
@@ -1184,6 +1191,12 @@ function cp(btn){
  const txt=btn.parentElement.textContent.replace(/Copy$/,'').replace(/Copied!$/,'').trim();
  navigator.clipboard.writeText(txt).then(()=>{btn.textContent='Copied!';btn.classList.add('copied');setTimeout(()=>{btn.textContent='Copy';btn.classList.remove('copied');},2000);});
 }
+</script>
+<script id="bcard-js">
+function openModal(id){var el=document.getElementById('modal-'+id);if(el){el.classList.add('open');document.body.style.overflow='hidden';}}
+function closeModal(id){var el=document.getElementById('modal-'+id);if(el){el.classList.remove('open');document.body.style.overflow='';}}
+document.addEventListener('click',function(e){if(e.target.classList&&e.target.classList.contains('modal-overlay'))e.target.classList.remove('open');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')document.querySelectorAll('.modal-overlay.open').forEach(function(m){m.classList.remove('open');document.body.style.overflow='';});});
 </script>
 
 <script>
