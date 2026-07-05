@@ -266,75 +266,75 @@ td a{color:var(--ink);font-weight:600}td a:hover{color:var(--accent2)}
   </div>
  </div>
  <div style="padding:22px 22px 18px">
-  <h3 style="margin:0 0 16px;font-size:18px;font-weight:700;color:var(--ink)">Six Copilot moments across one workday <span style="font-size:12px;color:var(--muted);font-weight:500">+ 10 bonus moves in the Bonus tab</span></h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px"><div style="aspect-ratio:1/1;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
- <div style="background:#0e7490;padding:8px 12px;display:flex;align-items:center;gap:8px;flex:0 0 auto">
-  <span style="font-size:18px;font-weight:800;color:rgba(255,255,255,.9);line-height:1">01</span>
-  <span style="font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Daily Briefing</span>
+  <h3 style="margin:0 0 16px;font-size:18px;font-weight:700;color:var(--ink)">Six Copilot moments across one workday <span style="font-size:12px;color:var(--muted);font-weight:500">+ 10 bonus moves in the Bonus tab</span></h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px"><div style="min-height:230px;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
+ <div style="background:#0e7490;padding:10px 14px;display:flex;align-items:center;gap:10px;flex:0 0 auto">
+  <span style="font-size:22px;font-weight:800;color:rgba(255,255,255,.95);line-height:1">01</span>
+  <span style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Daily Briefing</span>
  </div>
- <div style="padding:11px 12px 12px;display:flex;flex-direction:column;gap:5px;flex:1 1 auto;overflow:hidden">
-  <p style="margin:0;font-size:13.5px;font-weight:700;color:var(--ink);line-height:1.25">Morning brief in 3 minutes</p>
-  <p style="margin:0;font-size:10.5px;font-style:italic;color:var(--brand);font-weight:600">Researcher - Critique</p>
-  <p style="margin:0;font-size:11.5px;color:var(--muted);line-height:1.4">Researcher pulls emails, chats, calendar and files into one polished briefing before you sit down.</p>
+ <div style="padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1 1 auto;overflow:hidden">
+  <p style="margin:0;font-size:16px;font-weight:700;color:var(--ink);line-height:1.3">Morning brief in 3 minutes</p>
+  <p style="margin:0;font-size:12px;font-style:italic;color:var(--brand);font-weight:600">Researcher - Critique</p>
+  <p style="margin:0;font-size:13px;color:var(--muted);line-height:1.5">Researcher pulls emails, chats, calendar and files into one polished briefing before you sit down.</p>
  </div>
- </div><div style="aspect-ratio:1/1;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
- <div style="background:#0e7490;padding:8px 12px;display:flex;align-items:center;gap:8px;flex:0 0 auto">
-  <span style="font-size:18px;font-weight:800;color:rgba(255,255,255,.9);line-height:1">02</span>
-  <span style="font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Quarter Closing</span>
+ </div><div style="min-height:230px;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
+ <div style="background:#0e7490;padding:10px 14px;display:flex;align-items:center;gap:10px;flex:0 0 auto">
+  <span style="font-size:22px;font-weight:800;color:rgba(255,255,255,.95);line-height:1">02</span>
+  <span style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Quarter Closing</span>
  </div>
- <div style="padding:11px 12px 12px;display:flex;flex-direction:column;gap:5px;flex:1 1 auto;overflow:hidden">
-  <p style="margin:0;font-size:13.5px;font-weight:700;color:var(--ink);line-height:1.25">One cowork, five outputs, one deck</p>
-  <p style="margin:0;font-size:10.5px;font-style:italic;color:var(--brand);font-weight:600">SHOWCASE - Cowork + PowerPoint</p>
-  <p style="margin:0;font-size:11.5px;color:var(--muted);line-height:1.4">A live demo: Cowork drafts memo, email, invite and a live dashboard, then a BCG-style deck from the same memo.</p>
+ <div style="padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1 1 auto;overflow:hidden">
+  <p style="margin:0;font-size:16px;font-weight:700;color:var(--ink);line-height:1.3">One cowork, five outputs, one deck</p>
+  <p style="margin:0;font-size:12px;font-style:italic;color:var(--brand);font-weight:600">SHOWCASE - Cowork + PowerPoint</p>
+  <p style="margin:0;font-size:13px;color:var(--muted);line-height:1.5">A live demo: Cowork drafts memo, email, invite and a live dashboard, then a BCG-style deck from the same memo.</p>
  </div>
- </div><div style="aspect-ratio:1/1;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
- <div style="background:#0e7490;padding:8px 12px;display:flex;align-items:center;gap:8px;flex:0 0 auto">
-  <span style="font-size:18px;font-weight:800;color:rgba(255,255,255,.9);line-height:1">03</span>
-  <span style="font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Market Intelligence</span>
+ </div><div style="min-height:230px;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
+ <div style="background:#0e7490;padding:10px 14px;display:flex;align-items:center;gap:10px;flex:0 0 auto">
+  <span style="font-size:22px;font-weight:800;color:rgba(255,255,255,.95);line-height:1">03</span>
+  <span style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Market Intelligence</span>
  </div>
- <div style="padding:11px 12px 12px;display:flex;flex-direction:column;gap:5px;flex:1 1 auto;overflow:hidden">
-  <p style="margin:0;font-size:13.5px;font-weight:700;color:var(--ink);line-height:1.25">Peer benchmark with a critique</p>
-  <p style="margin:0;font-size:10.5px;font-style:italic;color:var(--brand);font-weight:600">Researcher - Model Council</p>
-  <p style="margin:0;font-size:11.5px;color:var(--muted);line-height:1.4">Researcher benchmarks peers, then Model Council critiques its own answer before you take it to the board.</p>
+ <div style="padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1 1 auto;overflow:hidden">
+  <p style="margin:0;font-size:16px;font-weight:700;color:var(--ink);line-height:1.3">Peer benchmark with a critique</p>
+  <p style="margin:0;font-size:12px;font-style:italic;color:var(--brand);font-weight:600">Researcher - Model Council</p>
+  <p style="margin:0;font-size:13px;color:var(--muted);line-height:1.5">Researcher benchmarks peers, then Model Council critiques its own answer before you take it to the board.</p>
  </div>
- </div><div style="aspect-ratio:1/1;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
- <div style="background:#0e7490;padding:8px 12px;display:flex;align-items:center;gap:8px;flex:0 0 auto">
-  <span style="font-size:18px;font-weight:800;color:rgba(255,255,255,.9);line-height:1">04</span>
-  <span style="font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Edit W+P+E</span>
+ </div><div style="min-height:230px;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
+ <div style="background:#0e7490;padding:10px 14px;display:flex;align-items:center;gap:10px;flex:0 0 auto">
+  <span style="font-size:22px;font-weight:800;color:rgba(255,255,255,.95);line-height:1">04</span>
+  <span style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Edit W+P+E</span>
  </div>
- <div style="padding:11px 12px 12px;display:flex;flex-direction:column;gap:5px;flex:1 1 auto;overflow:hidden">
-  <p style="margin:0;font-size:13.5px;font-weight:700;color:var(--ink);line-height:1.25">One in-place edit each</p>
-  <p style="margin:0;font-size:10.5px;font-style:italic;color:var(--brand);font-weight:600">Word + PowerPoint + Excel Edit</p>
-  <p style="margin:0;font-size:11.5px;color:var(--muted);line-height:1.4">Rewrite the memo in Word, one BCG-style summary slide in PowerPoint, and a variance chart in Excel - all in-place.</p>
+ <div style="padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1 1 auto;overflow:hidden">
+  <p style="margin:0;font-size:16px;font-weight:700;color:var(--ink);line-height:1.3">One in-place edit each</p>
+  <p style="margin:0;font-size:12px;font-style:italic;color:var(--brand);font-weight:600">Word + PowerPoint + Excel Edit</p>
+  <p style="margin:0;font-size:13px;color:var(--muted);line-height:1.5">Rewrite the memo in Word, one BCG-style summary slide in PowerPoint, and a variance chart in Excel - all in-place.</p>
  </div>
- </div><div style="aspect-ratio:1/1;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
- <div style="background:#0e7490;padding:8px 12px;display:flex;align-items:center;gap:8px;flex:0 0 auto">
-  <span style="font-size:18px;font-weight:800;color:rgba(255,255,255,.9);line-height:1">05</span>
-  <span style="font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Copilot Create</span>
+ </div><div style="min-height:230px;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
+ <div style="background:#0e7490;padding:10px 14px;display:flex;align-items:center;gap:10px;flex:0 0 auto">
+  <span style="font-size:22px;font-weight:800;color:rgba(255,255,255,.95);line-height:1">05</span>
+  <span style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Copilot Create</span>
  </div>
- <div style="padding:11px 12px 12px;display:flex;flex-direction:column;gap:5px;flex:1 1 auto;overflow:hidden">
-  <p style="margin:0;font-size:13.5px;font-weight:700;color:var(--ink);line-height:1.25">One-page leadership infographic</p>
-  <p style="margin:0;font-size:10.5px;font-style:italic;color:var(--brand);font-weight:600">Copilot Chat - Create</p>
-  <p style="margin:0;font-size:11.5px;color:var(--muted);line-height:1.4">A dense magazine-style A3 infographic for the GM, ready to print or share on Teams.</p>
+ <div style="padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1 1 auto;overflow:hidden">
+  <p style="margin:0;font-size:16px;font-weight:700;color:var(--ink);line-height:1.3">One-page leadership infographic</p>
+  <p style="margin:0;font-size:12px;font-style:italic;color:var(--brand);font-weight:600">Copilot Chat - Create</p>
+  <p style="margin:0;font-size:13px;color:var(--muted);line-height:1.5">A dense magazine-style A3 infographic for the GM, ready to print or share on Teams.</p>
  </div>
- </div><div style="aspect-ratio:1/1;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
- <div style="background:#0e7490;padding:8px 12px;display:flex;align-items:center;gap:8px;flex:0 0 auto">
-  <span style="font-size:18px;font-weight:800;color:rgba(255,255,255,.9);line-height:1">06</span>
-  <span style="font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Agent Builder</span>
+ </div><div style="min-height:230px;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
+ <div style="background:#0e7490;padding:10px 14px;display:flex;align-items:center;gap:10px;flex:0 0 auto">
+  <span style="font-size:22px;font-weight:800;color:rgba(255,255,255,.95);line-height:1">06</span>
+  <span style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Agent Builder</span>
  </div>
- <div style="padding:11px 12px 12px;display:flex;flex-direction:column;gap:5px;flex:1 1 auto;overflow:hidden">
-  <p style="margin:0;font-size:13.5px;font-weight:700;color:var(--ink);line-height:1.25">Ten minutes to a team agent</p>
-  <p style="margin:0;font-size:10.5px;font-style:italic;color:var(--brand);font-weight:600">M365 Copilot - Agent Builder</p>
-  <p style="margin:0;font-size:11.5px;color:var(--muted);line-height:1.4">Describe the agent in plain English, point it at a SharePoint folder, test three questions, publish to the team.</p>
+ <div style="padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1 1 auto;overflow:hidden">
+  <p style="margin:0;font-size:16px;font-weight:700;color:var(--ink);line-height:1.3">Ten minutes to a team agent</p>
+  <p style="margin:0;font-size:12px;font-style:italic;color:var(--brand);font-weight:600">M365 Copilot - Agent Builder</p>
+  <p style="margin:0;font-size:13px;color:var(--muted);line-height:1.5">Describe the agent in plain English, point it at a SharePoint folder, test three questions, publish to the team.</p>
  </div>
- </div><div style="aspect-ratio:1/1;border:1px dashed var(--brand);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:rgba(15,118,110,.06)">
- <div style="background:#334155;padding:8px 12px;display:flex;align-items:center;gap:8px;flex:0 0 auto">
-  <span style="font-size:18px;font-weight:800;color:rgba(255,255,255,.9);line-height:1">+</span>
-  <span style="font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Bonus tab</span>
+ </div><div style="min-height:230px;border:1px dashed var(--brand);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:rgba(15,118,110,.06)">
+ <div style="background:#334155;padding:10px 14px;display:flex;align-items:center;gap:10px;flex:0 0 auto">
+  <span style="font-size:22px;font-weight:800;color:rgba(255,255,255,.95);line-height:1">+</span>
+  <span style="font-size:12px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Bonus tab</span>
  </div>
- <div style="padding:11px 12px 12px;display:flex;flex-direction:column;gap:5px;flex:1 1 auto;overflow:hidden">
-  <p style="margin:0;font-size:13.5px;font-weight:700;color:var(--ink);line-height:1.25">10 more moves</p>
-  <p style="margin:0;font-size:10.5px;font-style:italic;color:var(--brand);font-weight:600">Extras + prompt tips</p>
-  <p style="margin:0;font-size:11.5px;color:var(--muted);line-height:1.4">Teams recap - Word minutes, Excel Power Hour (Chat + Edit + Plan), Analyst Agent, Mail Merge, CV Screening, campaign posters, and prompt tips.</p>
+ <div style="padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1 1 auto;overflow:hidden">
+  <p style="margin:0;font-size:16px;font-weight:700;color:var(--ink);line-height:1.3">10 more moves</p>
+  <p style="margin:0;font-size:12px;font-style:italic;color:var(--brand);font-weight:600">Extras + prompt tips</p>
+  <p style="margin:0;font-size:13px;color:var(--muted);line-height:1.5">Teams recap - Word minutes, Excel Power Hour (Chat + Edit + Plan), Analyst Agent, Mail Merge, CV Screening, campaign posters, and prompt tips.</p>
  </div>
  </div></div></div>
 </div>
@@ -379,11 +379,11 @@ Start with a header: Daily briefing – Day, Date. Follow with a sub-header stat
 </div>
 </div>
 </section><section id="ex2">
-<div class="modulehead"><div class="num">2</div><h2>Exercise 2 · Prepare for Quarter Closing<small>SHOWCASE - watch the GM cowork with Copilot</small></h2></div>
-<div class="callout good"><b>SHOWCASE, not follow-along.</b> This is a live demo you watch, not a hands-on lab. The presenter runs the full Cowork flow end to end: one prompt drives analysis, Word summary, executive email draft, meeting invite, live HTML dashboard, then the BCG-style deck. You do not need to type anything. Just watch how the plan is shown, edited and paused before anything leaves the tenant.</div>
+<div class="modulehead"><div class="num">2</div><h2>Exercise 2 · Prepare for Quarter Closing<small>Cowork - follow along or watch and try later</small></h2></div>
+<div class="callout good"><b>Follow along if you have Cowork enabled.</b> If not, sit with us for the walkthrough and try it later in your own tenant. One prompt drives analysis, Word summary, executive email draft, meeting invite, live HTML dashboard, then the BCG-style deck. Copilot shows its plan first, you edit any step, and it pauses before sending email or scheduling.</div>
 
 
-<div class="callout" style="background:#fef3c7;border-color:#f59e0b" data-ihh-showcase="1"><b>Presenter demo.</b> Sit back and watch. The prompts below are shown so you can rerun them later in your own tenant.</div>
+<div class="callout" style="background:#fef3c7;border-color:#f59e0b" data-ihh-showcase="1"><b>Cowork is a paid Microsoft 365 Copilot feature.</b> If you have it, follow along. If not, watch this run - the prompts below are ready to copy for later.</div>
 <div class="card">
 <p class="lead">Open <b>Microsoft 365 Copilot Chat</b> and switch to <b>Cowork</b>. Reference <code>02 Contoso_KPI_Dashboard.xlsx</code> with <code>/</code>. Cowork shows its plan first, you edit any step, and it pauses before sending email or scheduling.</p>
 
@@ -443,7 +443,7 @@ Rules: one message per slide, action-title headlines (not topic titles), no more
 </div>
 
 </section><section id="ex3">
-<div class="modulehead"><div class="num">3</div><h2>Exercise 3 · Market Intelligence — Critique &amp; Model Council<small>Researcher</small></h2></div>
+<div class="modulehead"><div class="num">3</div><h2>Exercise 3 - Market Intelligence</h2></div>
 <div class="callout good"><b>When to do this:</b> Right after the daily briefing, when the GM needs deep market intelligence. Open Microsoft 365 Copilot → <b>Researcher</b>.</div>
 
 <div class="card">
@@ -489,7 +489,7 @@ Tone: direct, board-ready, no jargon. Max 350 words. Use [PLACEHOLDER] for anyth
 </div>
 </section>
 <section id="ex4">
-<div class="modulehead"><div class="num">4</div><h2>Exercise 4 - Edit with Copilot: Word, PowerPoint, Excel<small>Copilot Edit - three files, one flow</small></h2></div>
+<div class="modulehead"><div class="num">4</div><h2>Exercise 4 - Edit with Copilot in Word, PowerPoint and Excel<small>Copilot Edit - three files, one flow</small></h2></div>
 <div class="callout good"><b>The everyday power move.</b> The GM already has a draft memo, a slide, and a workbook. Copilot Edit rewrites in place - track changes, suggested rewrites, chart creation - so the document stays yours.</div>
 
 <div class="card">
@@ -638,7 +638,7 @@ Style: warm but professional, modern sans-serif, thin outline icons (shopping ba
 </div>
 </section>
 <section id="ex6">
-<div class="modulehead"><div class="num">6</div><h2>Exercise 6 - Build your own agent<small>Microsoft 365 Copilot - Agent Builder (no code)</small></h2></div>
+<div class="modulehead"><div class="num">6</div><h2>Exercise 6 - Build Your Own Agent<small>Microsoft 365 Copilot - Agent Builder (no code)</small></h2></div>
 <div class="callout good"><b>Ten minutes, one agent, whole team benefits.</b> You describe what you want, point it at a SharePoint folder, test it, and share. Every colleague with a Microsoft 365 Copilot licence can use it in the same Copilot pane.</div>
 
 <div class="card">
