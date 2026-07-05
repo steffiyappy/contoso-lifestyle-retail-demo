@@ -266,7 +266,7 @@ td a{color:var(--ink);font-weight:600}td a:hover{color:var(--accent2)}
   </div>
  </div>
  <div style="padding:22px 22px 18px">
-  <h3 style="margin:0 0 16px;font-size:18px;font-weight:700;color:var(--ink)">Six Copilot moments across one workday <span style="font-size:12px;color:var(--muted);font-weight:500">+ 10 bonus moves in the Extras tab</span></h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px"><div style="aspect-ratio:1/1;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
+  <h3 style="margin:0 0 16px;font-size:18px;font-weight:700;color:var(--ink)">Six Copilot moments across one workday <span style="font-size:12px;color:var(--muted);font-weight:500">+ 10 bonus moves in the Bonus tab</span></h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px"><div style="aspect-ratio:1/1;border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:var(--panel2)">
  <div style="background:#0e7490;padding:8px 12px;display:flex;align-items:center;gap:8px;flex:0 0 auto">
   <span style="font-size:18px;font-weight:800;color:rgba(255,255,255,.9);line-height:1">01</span>
   <span style="font-size:10px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px;line-height:1.2">Daily Briefing</span>
