@@ -433,12 +433,12 @@ Structure:
 7. Ask of the board - one clear ask
 8. Appendix - data sources
 
-Rules: one message per slide, action-title headlines (not topic titles), no more than 25 words per slide body, keep it black and white with our brand accent for emphasis only.</div>
+Rules: one message per slide, action-title headlines (not topic titles), no more than 25 words per slide body, keep it black and white with our brand accent for emphasis only.<button class="copy" onclick="cp(this)">Copy</button></div>
 </div>
 <div class="activity">
  <div class="head"><span class="num">Task 2.C</span><span class="file">Edit with Copilot in PowerPoint - Add a waterfall</span></div>
  <h4>Polish the KPI slide with a chart Copilot builds for you</h4>
- <div class="prompt">On the "Where we are" slide, add a waterfall chart that explains the variance between FY26 plan and FY26 actual for our headline KPI. Start with "Plan", show each driver as a positive or negative step, and end at "Actual". Use our brand accent for positive steps, dark slate for negative steps, and neutral grey for the totals. Add data labels in absolute numbers. Then write a one-line takeaway underneath starting with "So what:".</div>
+ <div class="prompt">On the "Where we are" slide, add a waterfall chart that explains the variance between FY26 plan and FY26 actual for our headline KPI. Start with "Plan", show each driver as a positive or negative step, and end at "Actual". Use our brand accent for positive steps, dark slate for negative steps, and neutral grey for the totals. Add data labels in absolute numbers. Then write a one-line takeaway underneath starting with "So what:".<button class="copy" onclick="cp(this)">Copy</button></div>
 </div>
 </div>
 
@@ -498,7 +498,7 @@ Tone: direct, board-ready, no jargon. Max 350 words. Use [PLACEHOLDER] for anyth
 <div class="activity">
  <div class="head"><span class="num">Task 4.1</span><span class="file">Copilot in Word - Rewrite</span></div>
  <h4>Turn a wall of text into a board-ready summary</h4>
- <div class="prompt">Rewrite this executive summary for a board audience: three tight paragraphs, plain business English, no jargon, end with one clear ask. Keep the numbers exactly as written and cite the source workbook in-line as "(source: KPI dashboard)".</div>
+ <div class="prompt">Rewrite this executive summary for a board audience: three tight paragraphs, plain business English, no jargon, end with one clear ask. Keep the numbers exactly as written and cite the source workbook in-line as "(source: KPI dashboard)".<button class="copy" onclick="cp(this)">Copy</button></div>
 </div>
 </div>
 
@@ -508,7 +508,7 @@ Tone: direct, board-ready, no jargon. Max 350 words. Use [PLACEHOLDER] for anyth
 <div class="activity">
  <div class="head"><span class="num">Task 4.2</span><span class="file">Edit with Copilot in PowerPoint</span></div>
  <h4>Compress the whole memo into one BCG-style slide</h4>
- <div class="prompt">Build ONE summary slide for the General Manager - Merchandising & Store Operations at Contoso Lifestyle Retail, grounded on /05 Contoso_Strategic_Memo.docx. Action-title headline. Three columns underneath: "Where we are", "What is working", "What is at risk". One sentence per column. Add a small callout box at the bottom with the single most important number in the memo. Use our brand accent for emphasis only, everything else neutral.</div>
+ <div class="prompt">Build ONE summary slide for the General Manager - Merchandising & Store Operations at Contoso Lifestyle Retail, grounded on /05 Contoso_Strategic_Memo.docx. Action-title headline. Three columns underneath: "Where we are", "What is working", "What is at risk". One sentence per column. Add a small callout box at the bottom with the single most important number in the memo. Use our brand accent for emphasis only, everything else neutral.<button class="copy" onclick="cp(this)">Copy</button></div>
 </div>
 </div>
 
@@ -522,7 +522,7 @@ Tone: direct, board-ready, no jargon. Max 350 words. Use [PLACEHOLDER] for anyth
 1. Add a column called "Variance vs Target %" and fill it with the correct formula per row.
 2. Apply conditional formatting to that column: red if worse than -5 percent, green if better than +2 percent, neutral otherwise.
 3. Insert a clustered column chart of Actual vs Target grouped by location, sorted worst to best.
-4. Add a short one-line comment above the chart starting with "So what:" that names the worst performer and by how much.</div>
+4. Add a short one-line comment above the chart starting with "So what:" that names the worst performer and by how much.<button class="copy" onclick="cp(this)">Copy</button></div>
 </div>
 </div>
 </section>
@@ -653,7 +653,7 @@ Purpose: answer any store manager’s question about targets, promos and invento
 
 Tone: friendly, direct, one-paragraph answers with numbers when possible. Always end with the source document and page number.
 
-Ask a clarifying question if the user’s question is vague. Never invent data. If the answer is not in the knowledge sources, say so and suggest who to ask.</div>
+Ask a clarifying question if the user’s question is vague. Never invent data. If the answer is not in the knowledge sources, say so and suggest who to ask.<button class="copy" onclick="cp(this)">Copy</button></div>
 </div>
 </div>
 
@@ -668,7 +668,7 @@ Ask a clarifying question if the user’s question is vague. Never invent data. 
 - The Excel file /02 Contoso_KPI_Dashboard.xlsx
 - The Word file /05 Contoso_Strategic_Memo.docx
 
-Rule: only answer from these sources. When you quote a number, add the file name and sheet or page in brackets.</div>
+Rule: only answer from these sources. When you quote a number, add the file name and sheet or page in brackets.<button class="copy" onclick="cp(this)">Copy</button></div>
 </div>
 </div>
 
@@ -681,7 +681,7 @@ Rule: only answer from these sources. When you quote a number, add the file name
 Test 2: "Give me three talking points for tomorrow’s ops call, one paragraph each."
 Test 3: "Draft a two-line WhatsApp update I can send to the leadership team right now."
 
-If any answer is wrong or missing a citation, edit the instructions and try again. Once all three pass, click Publish and share with the "General Manager - Merchandising & Store Operations team" security group.</div>
+If any answer is wrong or missing a citation, edit the instructions and try again. Once all three pass, click Publish and share with the "General Manager - Merchandising & Store Operations team" security group.<button class="copy" onclick="cp(this)">Copy</button></div>
 </div>
 </div>
 </section>
