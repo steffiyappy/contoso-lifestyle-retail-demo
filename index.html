@@ -702,42 +702,47 @@ When done, list every slide with its action-title headline in the chat so the GM
 <div class="activity">
 <div class="head"><span class="num">Task 4.3</span><span class="file">Edit with Copilot in Excel · Plan + Edit</span></div>
 <h4>One prompt · a full merchandising dashboard on a new sheet</h4>
-<div class="prompt">You are Copilot in Excel. Ground everything on the Monthly_KPIs and Targets_vs_Actual tabs of this workbook. Use our Contoso Lifestyle Retail brand feel (fuchsia + dark slate). Show your plan first (if Plan is available), then execute all of the following in order:
+<div class="prompt">You are Copilot in Excel. Ground everything on the Monthly_KPIs and Targets_vs_Actual tabs. Brand: Contoso Lifestyle Retail. Accent colour fuchsia (#D946EF) on a dark slate background (#1A0E24) with card surfaces in #2A1838. The goal is a modern, Power-BI-style executive dashboard - minimal chrome, big numbers, lots of empty space. Show your plan first (if Plan is available), then execute:
 
-1. On the source data tab, add a column called "Variance vs Target %" and fill it with the correct formula per row.
+1. On the source data tab, add a calculated column "Variance vs Target %" per row. Format as percentage, 1 decimal.
 
-2. Apply conditional formatting to that column: red if worse than -5%, amber between -5% and 0%, green if better than +2%. Add traffic-light icons.
+2. Convert the source range to an Excel Table so filter drop-downs appear on every column header. This is how the GM slices by Brand / Field / Month.
 
-3. Add a column "Trend (last 3 months)" with an inline sparkline per row.
+3. Create a new blank sheet called "GM Dashboard - Retail Performance". Then transform it into a dark executive dashboard:
 
-4. Convert the source data range to an Excel Table (Ctrl+T style). This gives us proper column filter drop-downs at the top of every column so the user can filter by Brand, Category and Month in-place, and the sparklines and conditional formatting stay in sync when new rows arrive.
+   CANVAS
+   - Fill the entire visible area (columns A to N, rows 1 to 40) with dark slate (#1A0E24) as the sheet background fill
+   - Remove gridlines on this sheet (View > Gridlines off)
+   - Set default font to Segoe UI, white (#FFFFFF) text
 
-5. Create a new sheet named "GM Dashboard - Merchandising" and build a one-page management dashboard on it that references the source table by formula (so it updates when the user filters):
+   HEADER BAND (rows 1-3)
+   - Merge A1:N2, dark slate fill, white text, 22pt bold: "Contoso Lifestyle Retail - Executive KPI Dashboard"
+   - Row 3 right-aligned in smaller fuchsia text: "Reporting period: <latest month from source> | Last refreshed: <TODAY()>"
 
-   HEADER
-   - Fuchsia header band with the title
-   - Reporting period on the right, pulled from the source data
-   - Small "Last refreshed" note in dark slate
+   KPI TILES (rows 5-11, one row of 5 tiles across)
+   - Five equal-width card blocks with card-surface fill (#2A1838), 1pt fuchsia border on the bottom edge only
+   - Tile 1: LFL Sales Growth - big number "+6.4 %" pulled from the source table via formula. Below it in smaller text: "Target +5.0 %" and a coloured variance chip (green if better than target, fuchsia if within 3%, red if worse than 3% off).
+   - Tile 2: Sell-through - big number "68.2 %" pulled from the source table via formula. Below it in smaller text: "Target 72.0 %" and a coloured variance chip (green if better than target, fuchsia if within 3%, red if worse than 3% off).
+   - Tile 3: Gross Margin - big number "54.1 %" pulled from the source table via formula. Below it in smaller text: "Target 55.0 %" and a coloured variance chip (green if better than target, fuchsia if within 3%, red if worse than 3% off).
+   - Tile 4: Stock Cover - big number "9.8 wks" pulled from the source table via formula. Below it in smaller text: "Target 8.5 wks" and a coloured variance chip (green if better than target, fuchsia if within 3%, red if worse than 3% off).
+   - Tile 5: Inventory Ageing - big number "12.4 %" pulled from the source table via formula. Below it in smaller text: "Target 10.0 %" and a coloured variance chip (green if better than target, fuchsia if within 3%, red if worse than 3% off).
+   - Inside each tile use 28pt bold for the big number, 10pt for the label above and the target below
 
-   KPI SCORECARDS (top row, 5 tiles across)
-   - LFL Sales, Sell-through %, Gross Margin %, Stock Cover (weeks), Inventory Ageing %
-   - Each tile shows: actual · target · variance · RAG traffic light · sparkline
-   - Each tile is a small cell block with a formula that reads from the source table
+   INSIGHT CHART (rows 13-28, spans full width)
+   - One horizontal bar chart titled "LFL Sales Growth by Brand (Actual vs Target)"
+   - Two series per Brand: Actual (solid fuchsia #D946EF) and Target (thin dark-grey outline, no fill)
+   - Sort bars worst-to-best on variance so the GM's eye goes to the problem first
+   - No chart border, no gridlines, no legend box (put a small manual legend in the top-right of the chart area using two coloured squares + labels)
+   - Chart plot area fill: #2A1838. Chart area fill: #1A0E24. Axis labels white 10pt. Title white 14pt bold left-aligned.
 
-   CHARTS
-   - Variance waterfall: FY26 Plan -> drivers (positive and negative) -> FY26 Actual for LFL sales, with fuchsia bars for positives and dark-slate bars for negatives
-   - Clustered column: Actual vs Target by category, sorted worst to best, with data labels
-   - Line chart: monthly trend for the last 12 months for LFL sales, with the target as a dashed reference line
-   - Pareto (column + cumulative line): top slow-moving categories by ageing stock value
+   INSIGHT STRIP (rows 30-33, full width)
+   - Merge into one dark-slate box with a 2pt top border in fuchsia
+   - White 12pt bold text: "So what:" followed by one line naming the single biggest variance and the owner
+   - Below it in 10pt fuchsia: "Next step:" and one concrete action for this week
 
-   CALLOUTS (bottom)
-   - "Top 3 issues today" - dark-slate box, three bullets pulled from the worst variances
-   - "Top 3 actions for tomorrow" - fuchsia box, three bullets that pair each issue with a concrete next step
-   - One-line "So what:" summary above the callouts, naming the single biggest risk and the owner
+4. Freeze rows 1-3 so the header stays visible.
 
-6. Freeze the header row of the dashboard so it stays visible when the GM scrolls.
-
-7. On the dashboard sheet, add a text box in the bottom right with a link back to the source data table labelled "Open source data · use column filters to slice by Brand, Category and Month".
+5. On the dashboard, add a small text link bottom-right (row 40) in fuchsia 9pt: "Open source data - use column filters to slice by Brand / Field / Month".
 
 Do not ask any clarifying questions - proceed. When done, list every change you made as a numbered summary at the end of the chat so the GM can review before saving.<button class="copy" onclick="cp(this)">Copy</button></div>
 <div class="callout"><b>Closing line for the audience:</b> "One prompt. Copilot built a dashboard sheet with 5 KPI scorecards, 4 charts, 3 slicers, RAG bands, sparklines and next-step callouts - grounded on the same workbook that came out of Ex2. No formulas, no VBA, no add-ins."</div>
