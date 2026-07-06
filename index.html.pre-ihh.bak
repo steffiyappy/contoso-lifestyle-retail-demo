@@ -493,36 +493,114 @@ Tone: direct, board-ready, no jargon. Max 350 words. Use [PLACEHOLDER] for anyth
 <div class="callout good"><b>The everyday power move.</b> The GM already has a draft memo, a slide, and a workbook. Copilot Edit rewrites in place - track changes, suggested rewrites, chart creation - so the document stays yours.</div>
 
 <div class="card">
-<h3>4.1 - Word: Sharpen the memo</h3>
-<p class="lead">Open <code>05 Contoso_Strategic_Memo.docx</code> in <b>Word</b> for the web. Select the executive summary paragraph. Click <b>Copilot -> Rewrite</b>.</p>
+<h3>4.1 - Word: Turn a plain memo into a merchandising board pack in one prompt</h3>
+<p class="lead">Open <code>05 Contoso_Strategic_Memo.docx</code> in <b>Word</b> for the web. Click <b>Copilot</b> in the ribbon to open the pane. Reference the KPI workbook with <code>/02 Contoso_KPI_Dashboard.xlsx</code>. Paste the prompt below and watch Copilot make every edit in place.</p>
 <div class="activity">
- <div class="head"><span class="num">Task 4.1</span><span class="file">Copilot in Word - Rewrite</span></div>
- <h4>Turn a wall of text into a board-ready summary</h4>
- <div class="prompt">Rewrite this executive summary for a board audience: three tight paragraphs, plain business English, no jargon, end with one clear ask. Keep the numbers exactly as written and cite the source workbook in-line as "(source: KPI dashboard)".<button class="copy" onclick="cp(this)">Copy</button></div>
+ <div class="head"><span class="num">Task 4.1</span><span class="file">Copilot in Word - multi-edit in one pass</span></div>
+ <h4>Seven edits, one prompt, still your document</h4>
+ <div class="prompt">You are Copilot in Word. Work in place on this document. Ground numbers on /02 Contoso_KPI_Dashboard.xlsx. Use our Contoso Lifestyle Retail brand feel (fuchsia + dark slate). Show your plan first, then execute all of the following in order:
+
+1. REWRITE the executive summary for the merchandising board — three tight paragraphs, plain business English, no jargon, end with one clear ask. Keep every number exactly as in the workbook and cite the source in-line as "(source: KPI dashboard)".
+
+2. INSERT a "Merchandising Scorecard" table right under the summary — 5 rows for our headline KPIs (LFL Sales, Sell-through %, Gross Margin %, Stock Cover Weeks, Inventory Ageing %). Columns: Metric · Actual · Target · Variance · RAG. Pull the values from the KPI dashboard. Use a fuchsia header row and red / amber / green shading in the RAG cell.
+
+3. ADD a pull-quote callout box under the scorecard in fuchsia with a 1-sentence "So what" line, big enough to catch the eye when the doc is scrolled.
+
+4. INSERT a new section titled "So What & Next 30 Days" with three subheadings - "What is working", "What is at risk", "What we will do" - two bullets under each, grounded on the KPI dashboard.
+
+5. REWRITE every section heading in the document into an action-title style (a sentence that states the conclusion, not just a topic word). Keep the same heading levels.
+
+6. ADD a hyperlink block at the bottom labelled "Open source dashboard" pointing to Dashboard.html in OneDrive, and a second link "Open KPI workbook" pointing to /02 Contoso_KPI_Dashboard.xlsx.
+
+7. INSERT a footer: fuchsia 3-pt accent stripe, "Contoso Lifestyle Retail · GM Office" on the left, "Page X of Y" on the right. Add a small "Version 2 · [today]" note in dark slate under the document title on page 1.
+
+When done, list every change you made as a numbered summary at the end of the chat so the GM can review, and use tracked changes so nothing is silently overwritten.<button class="copy" onclick="cp(this)">Copy</button></div>
+ <div class="callout"><b>Closing line for the audience:</b> "One prompt. Copilot rewrote the summary, inserted a scorecard table with live numbers from Excel, added a callout, a new 30-day section, action-title headings, hyperlinks and a brand footer — all tracked, all reviewable, all in place."</div>
+ <div class="callout warn"><b>Reality check on Copilot in Word:</b> tracked changes may need to be turned on manually (<i>Review > Track Changes</i>) before the edit for a proper markup view. If the scorecard table pulls the wrong columns, follow up with: <i>"Rebuild the scorecard table using Actual and Target from the Targets_vs_Actual tab, ignore the Monthly_KPIs tab."</i></div>
+</div>
 </div>
 </div>
 
 <div class="card">
-<h3>4.2 - PowerPoint: One perfect summary slide</h3>
-<p class="lead">Open a blank <b>PowerPoint</b> deck (or your corporate template). Click <b>Copilot -> Create presentation from file</b> and pick <code>05 Contoso_Strategic_Memo.docx</code>. Then open the Copilot pane on slide 1.</p>
+<h3>4.2 - PowerPoint: A 6-slide merchandising board mini-pack in one prompt</h3>
+<p class="lead">Open a blank <b>PowerPoint</b> deck (or your corporate template so brand fonts and colours are inherited). Click <b>Copilot</b> to open the pane. Reference the memo with <code>/05 Contoso_Strategic_Memo.docx</code> and the workbook with <code>/02 Contoso_KPI_Dashboard.xlsx</code>. Paste the prompt below.</p>
 <div class="activity">
- <div class="head"><span class="num">Task 4.2</span><span class="file">Edit with Copilot in PowerPoint</span></div>
- <h4>Compress the whole memo into one BCG-style slide</h4>
- <div class="prompt">Build ONE summary slide for the General Manager - Merchandising & Store Operations at Contoso Lifestyle Retail, grounded on /05 Contoso_Strategic_Memo.docx. Action-title headline. Three columns underneath: "Where we are", "What is working", "What is at risk". One sentence per column. Add a small callout box at the bottom with the single most important number in the memo. Use our brand accent for emphasis only, everything else neutral.<button class="copy" onclick="cp(this)">Copy</button></div>
+ <div class="head"><span class="num">Task 4.2</span><span class="file">Edit with Copilot in PowerPoint - multi-slide build</span></div>
+ <h4>Six slides, action titles, chart, speaker notes, Zoom summary — one prompt</h4>
+ <div class="prompt">You are Copilot in PowerPoint. Ground everything on /05 Contoso_Strategic_Memo.docx and /02 Contoso_KPI_Dashboard.xlsx. Use our Contoso Lifestyle Retail brand feel (fuchsia + dark slate, premium retail). Show your plan first, then execute all of the following in order:
+
+1. BUILD a 6-slide executive mini-pack for the General Manager · Merchandising & Store Operations. Every slide uses an ACTION-TITLE headline (the title states the conclusion, not the topic). Structure:
+
+   Slide 1 - Cover: "Contoso Lifestyle Retail · Q3 Merchandising - What the GM is asking the Board to decide"
+   Slide 2 - Executive summary: three headline messages, one line each, fuchsia-accent underlines
+   Slide 3 - Where we are: a 5-row scorecard table (Metric · Actual · Target · Variance · RAG) with LFL, Sell-through %, Margin %, Stock Cover, Ageing %
+   Slide 4 - The variance story: a waterfall chart explaining FY26 Plan -> drivers -> FY26 Actual for LFL sales, with fuchsia bars for positives, dark-slate bars for negatives, one-line "So what:" under the chart
+   Slide 5 - Top 3 risks for the next 30 days across brands, each with a mitigation owner and by-when
+   Slide 6 - The ask: one clear board decision, three success measures, next review date
+
+2. INSERT a SUMMARY / ZOOM slide at position 2 that links to slides 3, 4, 5, 6 as clickable thumbnails so the GM can jump directly to any topic in the board room.
+
+3. Add SPEAKER NOTES on every slide — 30 to 45 seconds of natural spoken script per slide that the GM can read verbatim.
+
+4. Add a slim "So what:" strip in fuchsia at the bottom of slides 3, 4, 5 with the single most important takeaway from that slide.
+
+5. Apply brand palette throughout: fuchsia for emphasis, dark slate for headings, warm grey for body. Body font 18pt minimum. No more than 25 words per slide body.
+
+6. Insert a final APPENDIX slide (slide 7) listing all data sources with hyperlinks back to /02 Contoso_KPI_Dashboard.xlsx and Dashboard.html.
+
+When done, list every slide with its action-title headline in the chat so the GM can review before saving.<button class="copy" onclick="cp(this)">Copy</button></div>
+ <div class="callout"><b>Closing line for the audience:</b> "One prompt. Six action-title slides, a Zoom summary that the GM clicks around in the board room, a waterfall chart, brand palette, speaker notes on every slide, and an appendix with clickable sources back to the workbook."</div>
+ <div class="callout warn"><b>Reality check on Copilot in PowerPoint:</b> the Zoom / Summary Slide may render as a plain list if your tenant does not have Zoom enabled - if so, follow up with: <i>"Convert slide 2 to a proper PowerPoint Summary Slide with Zoom-style clickable thumbnails to slides 3-6."</i> If the waterfall comes back as a plain bar chart, follow up with: <i>"Redo the chart on slide 4 as a proper waterfall - plan -> drivers -> actual - with fuchsia for positive steps and dark slate for negative steps."</i></div>
+</div>
 </div>
 </div>
 
 <div class="card">
-<h3>4.3 - Excel: Fix the workbook without writing a formula</h3>
-<p class="lead">Open <code>02 Contoso_KPI_Dashboard.xlsx</code> in <b>Excel</b> for the web. On the main data tab, click <b>Copilot -> Edit</b>.</p>
+<h3>4.3 - Excel: Build a merchandising dashboard - no formulas, no macros</h3>
+<p class="lead">Open <code>02 Contoso_KPI_Dashboard.xlsx</code> in <b>Excel</b> for the web. On the main data tab, click <b>Copilot -> Edit</b> (and <b>Plan</b> if you have it enabled - it will lay out the steps before executing).</p>
 <div class="activity">
- <div class="head"><span class="num">Task 4.3</span><span class="file">Edit with Copilot in Excel</span></div>
- <h4>Add a variance column, format the outliers, insert a chart - three steps, one pane</h4>
- <div class="prompt">In this workbook, do all of the following using Edit:
-1. Add a column called "Variance vs Target %" and fill it with the correct formula per row.
-2. Apply conditional formatting to that column: red if worse than -5 percent, green if better than +2 percent, neutral otherwise.
-3. Insert a clustered column chart of Actual vs Target grouped by location, sorted worst to best.
-4. Add a short one-line comment above the chart starting with "So what:" that names the worst performer and by how much.<button class="copy" onclick="cp(this)">Copy</button></div>
+ <div class="head"><span class="num">Task 4.3</span><span class="file">Edit with Copilot in Excel · Plan + Edit</span></div>
+ <h4>One prompt · a full merchandising dashboard on a new sheet</h4>
+ <div class="prompt">You are Copilot in Excel. Ground everything on the Monthly_KPIs and Targets_vs_Actual tabs of this workbook. Use our Contoso Lifestyle Retail brand feel (fuchsia + dark slate). Show your plan first (if Plan is available), then execute all of the following in order:
+
+1. On the source data tab, add a column called "Variance vs Target %" and fill it with the correct formula per row.
+
+2. Apply conditional formatting to that column: red if worse than -5%, amber between -5% and 0%, green if better than +2%. Add traffic-light icons.
+
+3. Add a column "Trend (last 3 months)" with an inline sparkline per store or category.
+
+4. Create a new sheet named "GM Dashboard - Merchandising" and build a one-page management dashboard on it:
+
+   HEADER
+   - Fuchsia header band with the title "Contoso Lifestyle Retail · Merchandising & Store Performance"
+   - Reporting period on the right, pulled from the source data
+   - Small "Last refreshed" note in dark slate
+
+   KPI SCORECARDS (top row · 5 tiles across)
+   - LFL Sales, Sell-through %, Gross Margin %, Stock Cover (weeks), Inventory Ageing %
+   - Each tile shows: actual · target · variance · RAG traffic light · sparkline
+
+   CHARTS
+   - Variance waterfall: FY26 Plan -> drivers (positive and negative) -> FY26 Actual for LFL sales, with fuchsia bars for positives and dark-slate bars for negatives
+   - Clustered column: Actual vs Target by category, sorted worst to best, with data labels
+   - Line chart: monthly trend for the last 12 months for LFL sales, with the target as a dashed reference line
+   - Pareto (column + cumulative line): top slow-moving categories by ageing stock value
+
+   FILTERS
+   - Add slicers for Brand, Category and Month at the top so the GM can filter interactively
+
+   CALLOUTS (bottom)
+   - "Top 3 issues today" - dark-slate box, three bullets pulled from the worst variances
+   - "Top 3 actions for tomorrow" - fuchsia box, three bullets that pair each issue with a concrete next step
+   - One-line "So what:" summary above the callouts, naming the single biggest risk and the owner
+
+5. Freeze the header row and the slicers so they stay visible when the GM scrolls.
+
+6. On sheet "GM Dashboard - Merchandising", add a text box in the bottom right with a link back to the source data tab labelled "Open source data".
+
+Do not ask any clarifying questions - proceed. When done, list every change you made as a numbered summary at the end of the chat so the GM can review before saving.<button class="copy" onclick="cp(this)">Copy</button></div>
+ <div class="callout"><b>Closing line for the audience:</b> "One prompt. Copilot built a dashboard sheet with 5 KPI scorecards, 4 charts, 3 slicers, RAG bands, sparklines and next-step callouts - grounded on the same workbook that came out of Ex2. No formulas, no VBA, no add-ins."</div>
+ <div class="callout warn"><b>Reality check on Copilot in Excel:</b> chart types (column, line, waterfall, Pareto) and conditional formatting are reliable. Slicers may render as filter buttons instead depending on tenant - if so, follow up with: <i>"Convert the Brand, Category and Month filter buttons at the top of the dashboard to proper Excel slicers."</i></div>
 </div>
 </div>
 </section>
