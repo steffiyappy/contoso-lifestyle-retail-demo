@@ -567,18 +567,21 @@ When done, list every slide with its action-title headline in the chat so the GM
 
 2. Apply conditional formatting to that column: red if worse than -5%, amber between -5% and 0%, green if better than +2%. Add traffic-light icons.
 
-3. Add a column "Trend (last 3 months)" with an inline sparkline per store or category.
+3. Add a column "Trend (last 3 months)" with an inline sparkline per row.
 
-4. Create a new sheet named "GM Dashboard - Merchandising" and build a one-page management dashboard on it:
+4. Convert the source data range to an Excel Table (Ctrl+T style). This gives us proper column filter drop-downs at the top of every column so the user can filter by Brand, Category and Month in-place, and the sparklines and conditional formatting stay in sync when new rows arrive.
+
+5. Create a new sheet named "GM Dashboard - Merchandising" and build a one-page management dashboard on it that references the source table by formula (so it updates when the user filters):
 
    HEADER
-   - Fuchsia header band with the title "Contoso Lifestyle Retail · Merchandising & Store Performance"
+   - Fuchsia header band with the title
    - Reporting period on the right, pulled from the source data
    - Small "Last refreshed" note in dark slate
 
-   KPI SCORECARDS (top row · 5 tiles across)
+   KPI SCORECARDS (top row, 5 tiles across)
    - LFL Sales, Sell-through %, Gross Margin %, Stock Cover (weeks), Inventory Ageing %
    - Each tile shows: actual · target · variance · RAG traffic light · sparkline
+   - Each tile is a small cell block with a formula that reads from the source table
 
    CHARTS
    - Variance waterfall: FY26 Plan -> drivers (positive and negative) -> FY26 Actual for LFL sales, with fuchsia bars for positives and dark-slate bars for negatives
@@ -586,21 +589,18 @@ When done, list every slide with its action-title headline in the chat so the GM
    - Line chart: monthly trend for the last 12 months for LFL sales, with the target as a dashed reference line
    - Pareto (column + cumulative line): top slow-moving categories by ageing stock value
 
-   FILTERS
-   - Add slicers for Brand, Category and Month at the top so the GM can filter interactively
-
    CALLOUTS (bottom)
    - "Top 3 issues today" - dark-slate box, three bullets pulled from the worst variances
    - "Top 3 actions for tomorrow" - fuchsia box, three bullets that pair each issue with a concrete next step
    - One-line "So what:" summary above the callouts, naming the single biggest risk and the owner
 
-5. Freeze the header row and the slicers so they stay visible when the GM scrolls.
+6. Freeze the header row of the dashboard so it stays visible when the GM scrolls.
 
-6. On sheet "GM Dashboard - Merchandising", add a text box in the bottom right with a link back to the source data tab labelled "Open source data".
+7. On the dashboard sheet, add a text box in the bottom right with a link back to the source data table labelled "Open source data · use column filters to slice by Brand, Category and Month".
 
 Do not ask any clarifying questions - proceed. When done, list every change you made as a numbered summary at the end of the chat so the GM can review before saving.<button class="copy" onclick="cp(this)">Copy</button></div>
  <div class="callout"><b>Closing line for the audience:</b> "One prompt. Copilot built a dashboard sheet with 5 KPI scorecards, 4 charts, 3 slicers, RAG bands, sparklines and next-step callouts - grounded on the same workbook that came out of Ex2. No formulas, no VBA, no add-ins."</div>
- <div class="callout warn"><b>Reality check on Copilot in Excel:</b> chart types (column, line, waterfall, Pareto) and conditional formatting are reliable. Slicers may render as filter buttons instead depending on tenant - if so, follow up with: <i>"Convert the Brand, Category and Month filter buttons at the top of the dashboard to proper Excel slicers."</i></div>
+ <div class="callout warn"><b>Reality check on Copilot in Excel:</b> formulas, conditional formatting, sparklines, table filters and chart types (column, line, waterfall, Pareto) are the reliable parts. Slicers wired across multiple charts are <b>not</b> something Copilot Edit produces end-to-end today - that is why this prompt uses a Table with column filter drop-downs instead, which the GM can actually use straight away. If a chart comes back as the wrong type, follow up with: <i>"Redo the variance chart on the dashboard as a proper waterfall - plan → drivers → actual - with fuchsia for positive steps and dark slate for negative steps."</i></div>
 </div>
 </div>
 </section>
