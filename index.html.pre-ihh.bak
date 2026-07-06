@@ -561,7 +561,7 @@ When done, list every slide with its action-title headline in the chat so the GM
 <div class="activity">
  <div class="head"><span class="num">Task 4.3</span><span class="file">Edit with Copilot in Excel · Plan + Edit</span></div>
  <h4>One prompt · a full merchandising dashboard on a new sheet</h4>
- <div class="prompt">You are Copilot in Excel. Ground everything on every tab of this workbook. Brand: Contoso Lifestyle Retail. Accent colour fuchsia (#D946EF) on a dark slate background (#1A0E24) with card surfaces in #2A1838. The goal is a printable one-page "GM Weekly Briefing Pack - Retail Performance" - a single Excel sheet that fits on one A3 landscape page, with a McKinsey-style narrative, a what-if scenario, KPI tiles, a brand heatmap and a top-5 action list. Show your plan first, then execute in three steps.
+ <div class="prompt">You are Copilot in Excel. Ground everything on every tab of this workbook. Brand: Contoso Lifestyle Retail. Use a clean, light look - a white sheet background, fuchsia (#D946EF) as the accent colour for headers, borders and highlights, and a very light fuchsia-tinted card surface (#FDF4FF) for the KPI tiles, callouts and section bands. Dark ink for text so it stays readable and print-friendly. The goal is a printable one-page "GM Weekly Briefing Pack - Retail Performance" - a single Excel sheet that fits on one A3 landscape page, with a McKinsey-style narrative, a what-if scenario, KPI tiles, a brand heatmap and a top-5 action list. Show your plan first, then execute in three steps.
 
 STEP A - ANALYSE THE WHOLE WORKBOOK (Chat mode, no writes yet)
 Return a 6-line executive read-out and pause for confirmation:
@@ -582,27 +582,27 @@ STEP C - BUILD THE PRINTABLE BRIEFING PACK ON ONE SHEET (Edit + Plan mode)
 
 C.1 On the source tab, add calculated column "Variance vs Target %" (percentage, 1 decimal). Convert the source range to an Excel Table so column filter drop-downs work.
 
-C.2 Create a new sheet called "GM Weekly Briefing Pack - Retail Performance". Set page layout to A3 landscape, fit-to-1-page-wide-by-1-page-tall, narrow margins. Then build the pack top-to-bottom:
+C.2 Create a new sheet called "GM Weekly Briefing Pack - Retail Performance". Set page layout to A3 landscape, fit-to-1-page-wide-by-1-page-tall, narrow margins. Then build the pack top-to-bottom on a WHITE canvas:
 
-   CANVAS - fill visible area (columns A to S, rows 1 to 60) with dark slate (#1A0E24), gridlines off, default font Segoe UI, white text.
+   CANVAS - keep the default white sheet background. Turn gridlines off (View > Gridlines off) so the layout looks clean. Default font Segoe UI, dark ink for text.
 
-   1. HEADER BAND (rows 1-3) - merge A1:S2, 22pt bold white: "Contoso Lifestyle Retail - GM Weekly Briefing Pack". Row 3 right-aligned fuchsia 10pt: reporting period from latest month + "Last refreshed: <TODAY()>".
+   1. HEADER BAND (rows 1-3) - merge A1:S2, fill #D946EF, white 22pt bold: "Contoso Lifestyle Retail - GM Weekly Briefing Pack". Row 3 right-aligned, dark ink 10pt: reporting period from latest month + "Last refreshed: <TODAY()>".
 
-   2. NARRATIVE MEMO (rows 4-11) - merge A4:S11, card surface #2A1838, 2pt fuchsia top border, white 11pt. Write a McKinsey-style 5-sentence exec memo grounded on STEP A findings. Structure: "So what:" sentence 1 (headline finding), sentence 2 (evidence in numbers), sentence 3 (peer benchmark from finding 4), sentence 4 (trend from finding 5 or 6), sentence 5 (the ask). Bold the numbers.
+   2. NARRATIVE MEMO (rows 4-11) - merge A4:S11, fill #FDF4FF, 2pt fuchsia left border, dark ink 11pt. Write a McKinsey-style 5-sentence exec memo grounded on STEP A findings. Structure: "So what:" sentence 1 (headline finding), sentence 2 (evidence in numbers), sentence 3 (peer benchmark from finding 4), sentence 4 (trend from finding 5 or 6), sentence 5 (the ask). Bold the numbers.
 
-   3. KPI TILES (rows 13-20) - one row of 5 cards, each card fill #2A1838 with 1pt fuchsia bottom border. Use the top-5 KPIs Copilot picked in STEP A (default: LFL Sales Growth, Sell-through, Gross Margin, Stock Cover, Inventory Ageing). Each tile: 10pt white label at top, 32pt bold big number in the middle, 10pt "Target X" below, coloured variance chip (green better than target, fuchsia within 3%, dark red worse than 3%), and a 3-month sparkline drawn as a mini line chart inside the card.
+   3. KPI TILES (rows 13-20) - one row of 5 cards, each card fill #FDF4FF with 3pt fuchsia top border. Use the top-5 KPIs Copilot picked in STEP A (default: LFL Sales Growth, Sell-through, Gross Margin, Stock Cover, Inventory Ageing). Each tile: 10pt dark ink label at top, 32pt bold dark ink big number in the middle, 10pt "Target X" below, coloured variance chip (green better than target, fuchsia within 3%, red worse than 3%), and a 3-month sparkline drawn as a mini line chart inside the card.
 
-   4. BRAND HEATMAP (rows 22-38) - a conditional-formatted grid: rows = brand names, columns = the 5 KPIs. Cell colour = performance vs target (deep red = far below, orange = slightly below, dark surface = on target, green = above). Include an average column at the far right. Sort rows worst to best on the biggest-gap KPI so the eye lands on the problem first. Above the heatmap, 12pt bold white title: "Brand Heatmap - who is on target, who is not".
+   4. BRAND HEATMAP (rows 22-38) - a conditional-formatted grid: rows = brand names, columns = the 5 KPIs. Cell colour = performance vs target (red = far below, orange = slightly below, white = on target, green = above). Include an average column at the far right. Sort rows worst to best on the biggest-gap KPI so the eye lands on the problem first. Above the heatmap, 12pt bold dark ink title: "Brand Heatmap - who is on target, who is not".
 
-   5. WHAT-IF SCENARIO CARD (rows 40-49) - merge A40:S40, 14pt bold fuchsia title: "What if we clear ageing inventory (over 90 days) at 30% markdown across the bottom-quartile brands?". Below, an embedded table from STEP B with the columns listed there. Format currency values with thousands separators, right-aligned, bold the totals row. Below the table, a 10pt white "So what:" summary line.
+   5. WHAT-IF SCENARIO CARD (rows 40-49) - merge A40:S40, fill #FDF4FF, 14pt bold #D946EF title: "What if we clear ageing inventory (over 90 days) at 30% markdown across the bottom-quartile brands?". Below, an embedded table from STEP B with the columns listed there. Format currency values with thousands separators, right-aligned, bold the totals row. Below the table, a 10pt dark ink "So what:" summary line.
 
-   6. TOP 5 ACTIONS FOR THE WEEK (rows 51-58) - card surface #2A1838, 2pt fuchsia top border, 12pt bold white title. Then 5 rows, each with columns: Action · Owner · By when · Expected impact. Pull the actions from STEP A findings and STEP B scenario. Actions must be concrete, specific to named brands, and tied to numbers.
+   6. TOP 5 ACTIONS FOR THE WEEK (rows 51-58) - card fill #FDF4FF, 2pt fuchsia left border, 12pt bold dark ink title. Then 5 rows, each with columns: Action · Owner · By when · Expected impact. Pull the actions from STEP A findings and STEP B scenario. Actions must be concrete, specific to named brands, and tied to numbers.
 
-   7. FOOTER (row 60) - fuchsia 9pt right-aligned: "Open source data - use column filters to slice by Brand / Store / Month".
+   7. FOOTER (row 60) - #D946EF 9pt right-aligned: "Open source data - use column filters to slice by Brand / Store / Month".
 
 C.3 Freeze rows 1-3. Set print area = A1:S60. Add a print header with the brand placeholder and page number.
 
-When done: (a) re-state the top three findings from STEP A, (b) re-state the top three what-if outcomes from STEP B, (c) list every change made in STEP C as a numbered summary so the GM can review before saving. Do not ask any other clarifying questions - proceed.<button class="copy" onclick="cp(this)">Copy</button></div>
+When done: (a) re-state the top three findings from STEP A, (b) re-state the top three what-if outcomes from STEP B, (c) list every change made in STEP C as a numbered summary so the GM can review before saving. Do not ask any other clarifying questions - proceed. Do not ask any other clarifying questions - proceed.<button class="copy" onclick="cp(this)">Copy</button></div>
  <div class="callout"><b>Closing line for the audience:</b> "One prompt. Copilot built a dashboard sheet with 5 KPI scorecards, 4 charts, 3 slicers, RAG bands, sparklines and next-step callouts - grounded on the same workbook that came out of Ex2. No formulas, no VBA, no add-ins."</div>
  <div class="callout warn"><b>Reality check on Copilot in Excel:</b> formulas, conditional formatting, sparklines, table filters and chart types (column, line, waterfall, Pareto) are the reliable parts. Slicers wired across multiple charts are <b>not</b> something Copilot Edit produces end-to-end today - that is why this prompt uses a Table with column filter drop-downs instead, which the GM can actually use straight away. If a chart comes back as the wrong type, follow up with: <i>"Redo the variance chart on the dashboard as a proper waterfall - plan → drivers → actual - with fuchsia for positive steps and dark slate for negative steps."</i></div>
 </div>
