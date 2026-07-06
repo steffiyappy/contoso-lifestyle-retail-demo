@@ -519,7 +519,7 @@ When done, list every change you made as a numbered summary at the end of the ch
  <div class="callout warn"><b>Reality check on Copilot in Word:</b> tracked changes may need to be turned on manually (<i>Review > Track Changes</i>) before the edit for a proper markup view. If the scorecard table pulls the wrong columns, follow up with: <i>"Rebuild the scorecard table using Actual and Target from the Targets_vs_Actual tab, ignore the Monthly_KPIs tab."</i></div>
 </div>
 </div>
-</div>
+
 
 <div class="card">
 <h3>4.2 - PowerPoint: A 6-slide merchandising board mini-pack in one prompt</h3>
@@ -553,7 +553,7 @@ When done, list every slide with its action-title headline in the chat so the GM
  <div class="callout warn"><b>Reality check on Copilot in PowerPoint:</b> the Zoom / Summary Slide may render as a plain list if your tenant does not have Zoom enabled - if so, follow up with: <i>"Convert slide 2 to a proper PowerPoint Summary Slide with Zoom-style clickable thumbnails to slides 3-6."</i> If the waterfall comes back as a plain bar chart, follow up with: <i>"Redo the chart on slide 4 as a proper waterfall - plan -> drivers -> actual - with fuchsia for positive steps and dark slate for negative steps."</i></div>
 </div>
 </div>
-</div>
+
 
 <div class="card">
 <h3>4.3 - Excel: Build a merchandising dashboard - no formulas, no macros</h3>
